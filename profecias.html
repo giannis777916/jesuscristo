@@ -33,17 +33,13 @@
 
         /* Estilo do botão hamburguer */
         .hamburger {
-            position: absolute;
-            top: 53%; /* Alinha verticalmente com o centro do título */
-            left: 300px; /* Manter o botão alinhado à esquerda */
-            transform: translateY(-50%); /* Ajusta o botão para ficar centralizado em relação ao título */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 35px;
             height: 23px;
             cursor: pointer;
-            z-index: 10; /* Garante que o botão ficará acima do conteúdo */
+            margin: 20px auto; /* Centraliza o botão e adiciona espaçamento */
         }
 
         .hamburger div {
@@ -164,12 +160,9 @@
                 font-size: 1em;
             }
 
-            /* Centraliza o botão hamburguer abaixo de h1 */
+            /* Centraliza o botão hamburguer e coloca entre h1 e p */
             .hamburger {
-                position: relative;
-                top: 10px; /* Ajuste da posição para ficar abaixo do título */
-                left: 50%; /* Centraliza o botão */
-                transform: translateX(-50%); /* Centraliza horizontalmente */
+                margin: 20px auto; /* Centraliza o botão com espaçamento em cima e embaixo */
             }
 
             .menu a {
@@ -181,12 +174,12 @@
 </head>
 <body>
     <header>
+        <h1>Profecias do Messias</h1>
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <h1>Profecias do Messias</h1>
     </header>
     <main>
         
@@ -242,7 +235,7 @@
     <a href="index.html">Página Inicial</a> <!-- Link atualizado para abrir o arquivo index.html -->
     <a href="#">Profecias</a>
     <a href="#">Contato</a>
-</div>
+    </div>
 
     <script>
         // Função para alternar a visibilidade do menu
