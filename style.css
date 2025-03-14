@@ -1,0 +1,64 @@
+/* Resetando margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte personalizada */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #3e1e80; /* Royal purple escuro */
+    color: #f5f5f5; /* Texto em off white queimado */
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    background-color: #2d087f; /* Tom de roxo mais escuro */
+    color: #f5f5f5; /* Texto em off white queimado */
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+/* Estilos para o título */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do parágrafo */
+main p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
