@@ -108,6 +108,7 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap; /* Permite que os botões quebrem para a linha abaixo em telas pequenas */
         }
 
         .button {
@@ -131,13 +132,20 @@
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
+                margin-left: 20px; /* Menos margem à esquerda */
             }
 
-            .question {
-                font-size: 1.1em;
+            .hamburger {
+                left: 20px; /* Ajusta o botão para a esquerda em telas menores */
             }
 
             p {
+                font-size: 1.1em;
+                margin-left: 20px; /* Menos margem à esquerda */
+                margin-right: 20px; /* Menos margem à direita */
+            }
+
+            .question {
                 font-size: 1.1em;
             }
 
@@ -145,24 +153,40 @@
                 font-size: 1em;
                 padding: 12px 25px;
             }
+
+            .buttons {
+                gap: 15px; /* Diminui o espaço entre os botões */
+            }
         }
 
         @media (max-width: 480px) {
             h1 {
                 font-size: 2em;
+                margin-left: 10px; /* Menos margem à esquerda */
+            }
+
+            .hamburger {
+                left: 10px; /* Ajusta o botão para a esquerda em telas muito pequenas */
+            }
+
+            p {
+                font-size: 1em;
+                margin-left: 10px; /* Menos margem à esquerda */
+                margin-right: 10px; /* Menos margem à direita */
             }
 
             .question {
                 font-size: 1em;
             }
 
-            p {
-                font-size: 1em;
-            }
-
             .button {
                 font-size: 0.9em;
                 padding: 10px 20px;
+            }
+
+            .buttons {
+                flex-direction: column; /* Coloca os botões em uma coluna */
+                gap: 10px; /* Ajusta o espaçamento */
             }
         }
     </style>
