@@ -1,28 +1,9 @@
-/* Aplicando a fonte Montserrat ao corpo */
+/* Aplicando a fonte Montserrat e ajustando o estilo */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #6a0dad; /* Royal Purple */
-    color: #f8f8f8; /* Off white queimado */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    background-color: #6a0dad; /* Cor de fundo roxa (Royal Purple) */
+    color: #ffffff; /* Texto branco */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    margin-top: 50px;
-}
-
-h1 {
-    font-weight: 700; /* Usa a versão mais forte da fonte */
-}
-
-main {
-    padding: 20px;
-}
-
-p {
-    font-weight: 300; /* Usa a versão mais leve da fonte */
-    text-align: justify;
-    margin-top: 20px;
 }
