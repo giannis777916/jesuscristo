@@ -130,6 +130,8 @@
         <div class="buttons">
             <button class="button" onclick="redirectUser('triste')">Triste</button>
             <button class="button" onclick="redirectUser('alegre')">Alegre</button>
+            <button class="button" onclick="redirectUser('ansioso')">Ansioso</button>
+            <button class="button" onclick="redirectUser('cansado')">Cansado</button>
         </div>
     </main>
 
@@ -142,6 +144,12 @@
             } else if (mood === 'alegre') {
                 // Se o usuário escolher "Alegre", redireciona para a página de alegria
                 window.location.href = 'alegre.html'; // Substitua com a URL desejada
+            } else if (mood === 'ansioso') {
+                // Se o usuário escolher "Ansioso", redireciona para a página de ansiedade
+                window.location.href = 'ansioso.html'; // Substitua com a URL desejada
+            } else if (mood === 'cansado') {
+                // Se o usuário escolher "Cansado", redireciona para a página de cansaço
+                window.location.href = 'cansado.html'; // Substitua com a URL desejada
             }
         }
     </script>
