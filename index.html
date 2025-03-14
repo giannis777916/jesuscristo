@@ -21,13 +21,63 @@
 
         header {
             margin-top: 50px;
+            position: relative;
         }
 
         h1 {
             font-weight: 700; /* Título com peso mais forte */
             font-size: 3em; /* Tamanho proporcional para o título */
+            margin-left: 30px; /* Mesma margem do parágrafo */
         }
 
+        /* Estilo do botão hamburguer */
+        .hamburger {
+            position: absolute;
+            top: 53%; /* Alinha verticalmente com o centro do título */
+            left: 90px; /* Mesma margem à esquerda do parágrafo e título */
+            transform: translateY(-50%); /* Ajusta o botão para ficar centralizado em relação ao título */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35px;
+            height: 23px;
+            cursor: pointer;
+            z-index: 10; /* Garante que o botão ficará acima do conteúdo */
+        }
+
+        .hamburger div {
+            background-color: white;
+            height: 5px;
+            border-radius: 5px;
+        }
+
+        /* Estilo do menu */
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            font-size: 1.5em;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #6a0dad;
+        }
+
+        /* Estilos para o conteúdo principal */
         main {
             padding: 20px;
             margin: 0 auto; /* Centraliza o conteúdo */
@@ -39,6 +89,8 @@
             text-align: justify;
             margin-top: 20px;
             font-size: 1.25em; /* Tamanho proporcional para o parágrafo */
+            margin-left: 30px; /* Mesma margem à esquerda do parágrafo */
+            margin-right: 30px; /* Garantir a mesma margem à direita */
         }
 
         /* Estilo da pergunta */
@@ -117,6 +169,11 @@
 </head>
 <body>
     <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <h1>Jesus Cristo</h1>
     </header>
     <main>
@@ -135,20 +192,28 @@
         </div>
     </main>
 
+    <div class="menu" id="menu">
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </div>
+
     <script>
+        // Função para alternar a visibilidade do menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
         // Função de redirecionamento com base na escolha do usuário
         function redirectUser(mood) {
             if (mood === 'triste') {
-                // Se o usuário escolher "Triste", redireciona para a página de tristeza
                 window.location.href = 'triste.html'; // Substitua com a URL desejada
             } else if (mood === 'alegre') {
-                // Se o usuário escolher "Alegre", redireciona para a página de alegria
                 window.location.href = 'alegre.html'; // Substitua com a URL desejada
             } else if (mood === 'ansioso') {
-                // Se o usuário escolher "Ansioso", redireciona para a página de ansiedade
                 window.location.href = 'ansioso.html'; // Substitua com a URL desejada
             } else if (mood === 'cansado') {
-                // Se o usuário escolher "Cansado", redireciona para a página de cansaço
                 window.location.href = 'cansado.html'; // Substitua com a URL desejada
             }
         }
