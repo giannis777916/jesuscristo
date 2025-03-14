@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profecias do Messias</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos diretamente no HTML */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para todo o site */
+            background-color: #6a0dad; /* Fundo roxo */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px; /* Tamanho base da fonte */
+            text-align: center; /* Centraliza todo o conteúdo no eixo X */
+        }
+
+        header {
+            margin-top: 50px;
+            position: relative;
+            text-align: center; /* Centraliza o conteúdo do header */
+        }
+
+        h1 {
+            font-weight: 700; /* Título com peso mais forte */
+            font-size: 3em; /* Tamanho proporcional para o título */
+            margin-left: 0; /* Remove margem à esquerda */
+        }
+
+        /* Estilo do botão hamburguer */
+        .hamburger {
+            position: absolute;
+            top: 53%; /* Alinha verticalmente com o centro do título */
+            left: 30px; /* Manter o botão alinhado à esquerda */
+            transform: translateY(-50%); /* Ajusta o botão para ficar centralizado em relação ao título */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 35px;
+            height: 23px;
+            cursor: pointer;
+            z-index: 10; /* Garante que o botão ficará acima do conteúdo */
+        }
+
+        .hamburger div {
+            background-color: white;
+            height: 5px;
+            border-radius: 5px;
+        }
+
+        /* Estilo do menu */
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            font-size: 1.5em;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #6a0dad;
+        }
+
+        /* Estilos para o conteúdo principal */
+        main {
+            padding: 20px;
+            margin: 0 auto; /* Centraliza o conteúdo */
+            max-width: 960px; /* Limita a largura máxima para o conteúdo */
+            text-align: center; /* Centraliza o conteúdo principal */
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.25em;
+            margin-top: 20px;
+        }
+
+        .prophecy {
+            margin-top: 50px;
+            background-color: #fff;
+            color: #6a0dad;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .prophecy h3 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .prophecy .old-testament, .prophecy .new-testament {
+            background-color: #fff;
+            color: #6a0dad;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        .prophecy .old-testament {
+            border: 2px solid #6a0dad;
+        }
+
+        .prophecy .new-testament {
+            border: 2px solid #6a0dad;
+        }
+
+        /* Ajustes para dispositivos menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .prophecy h3 {
+                font-size: 1.8em;
+            }
+
+            .prophecy .old-testament, .prophecy .new-testament {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .prophecy h3 {
+                font-size: 1.6em;
+            }
+
+            .prophecy .old-testament, .prophecy .new-testament {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Profecias do Messias</h1>
+    </header>
+    <main>
+        <h2>Profecias do Messias</h2>
+        <p>Aqui você encontrará as profecias que falam sobre a vinda do Messias, o Salvador prometido. Estas profecias estão presentes nas escrituras e se cumprem na pessoa de Jesus Cristo.</p>
+
+        <!-- Profecia 1 -->
+        <div class="prophecy">
+            <h3>Profecia 1: O Nascimento do Messias</h3>
+            <div class="old-testament">
+                <p>Isaías 7:14 - "Portanto, o Senhor mesmo vos dará um sinal: A virgem conceberá e dará à luz um filho, e chamará o seu nome Emanuel."</p>
+            </div>
+            <div class="new-testament">
+                <p>Mateus 1:22-23 - "Tudo isso aconteceu para que se cumprisse o que o Senhor tinha dito pelo profeta: 'A virgem ficará grávida e dará à luz um filho, e o chamarão Emanuel', que significa 'Deus conosco'."</p>
+            </div>
+        </div>
+
+        <!-- Profecia 2 -->
+        <div class="prophecy">
+            <h3>Profecia 2: O Messias Sofrendo por Nossos Pecados</h3>
+            <div class="old-testament">
+                <p>Isaías 53:5 - "Mas ele foi ferido pelas nossas transgressões, esmagado pelas nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas feridas fomos sarados."</p>
+            </div>
+            <div class="new-testament">
+                <p>1 Pedro 2:24 - "Carregando ele mesmo os nossos pecados no seu corpo sobre o madeiro, para que, mortos para os pecados, vivamos para a justiça; pelas suas feridas fostes sarados."</p>
+            </div>
+        </div>
+
+        <!-- Profecia 3 -->
+        <div class="prophecy">
+            <h3>Profecia 3: O Messias Seria Traído</h3>
+            <div class="old-testament">
+                <p>Zacarías 11:12-13 - "Eu disse a eles: 'Se for do vosso agrado, dai-me o meu salário; mas, se não for, deixai-o'. E pesaram o meu salário, trinta moedas de prata. Então o Senhor me disse: 'Lança-o ao oleiro, este valor magnífico, com que fui avaliado por eles!'</p>
+            </div>
+            <div class="new-testament">
+                <p>Mateus 26:14-15 - "Então um dos Doze, chamado Judas Iscariotes, foi ter com os principais sacerdotes e disse: 'Que quereis dar-me, e eu vo-lo entregarei?' E eles lhe fixaram o preço de trinta moedas de prata."</p>
+            </div>
+        </div>
+
+        <!-- Profecia 4 -->
+        <div class="prophecy">
+            <h3>Profecia 4: O Messias Ressuscitaria</h3>
+            <div class="old-testament">
+                <p>Salmos 16:10 - "Porque não deixarás a minha alma no Sheol, nem permitirás que o teu Santo veja a corrupção."</p>
+            </div>
+            <div class="new-testament">
+                <p>Atos 2:31 - "Vendo isto, falou da ressurreição de Cristo, que a sua alma não foi deixada no Hades, nem a sua carne viu corrupção."</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="menu" id="menu">
+    <a href="index.html">Página Inicial</a> <!-- Link atualizado para abrir o arquivo index.html -->
+    <a href="#">Profecias</a>
+    <a href="#">Contato</a>
+</div>
+
+    <script>
+        // Função para alternar a visibilidade do menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
