@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolo para Você</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Garantindo que a fonte Montserrat seja aplicada em tudo */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para todo o site */
+            background-color: #6a0dad; /* Fundo roxo */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: center; /* Centralizando todo o conteúdo no eixo X */
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 3em;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        p {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 1.25em;
+        }
+
+        /* Estilo do versículo */
+        .verse {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 40px;
+        }
+
+        /* Estilo da recomendação da música */
+        .music-recommendation {
+            margin-top: 40px;
+        }
+
+        .music-title {
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .music-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Botão para voltar */
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            background-color: #ffffff;
+            color: #6a0dad;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Montserrat', sans-serif; /* Garantindo que a fonte Montserrat seja aplicada */
+        }
+
+        .back-button:hover {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consolo para o Seu Coração</h1>
+    </header>
+    <main>
+        <!-- Versículo de consolo -->
+        <div class="verse">
+            <p>"O Senhor é perto dos que têm o coração quebrantado e salva os de espírito abatido." - Salmos 34:18</p>
+        </div>
+
+        <!-- Recomendação de música -->
+        <div class="music-recommendation">
+            <p class="music-title">Recomendação de Música</p>
+            <p>Ouça essa música e deixe seu coração ser tocado:</p>
+            <!-- Imagem da capa da música -->
+            <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/d/f/6/5/825071576852760.jpg" alt="Capa da música Não Pare - Midian Lima" class="music-image">
+            <p><a href="https://open.spotify.com/track/1JlbHs5w70AfUv6bHk9bvh" target="_blank" style="color: white; font-size: 1.2em;">Ouça "Não Pare" no Spotify</a></p>
+        </div>
+
+        <!-- Botão para voltar -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </main>
+</body>
+</html>
