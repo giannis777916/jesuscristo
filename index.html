@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Cristo É o Senhor</title>
     <!-- Importando a fonte Montserrat do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Estilos diretamente no HTML */
         body {
-            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para todo o site */
             background-color: #6a0dad; /* Fundo roxo */
             color: #ffffff; /* Texto branco */
             margin: 0;
@@ -30,13 +30,49 @@
 
         main {
             padding: 20px;
+            margin: 0 auto; /* Centraliza o conteúdo */
+            max-width: 960px; /* Limita a largura máxima para o conteúdo */
         }
 
         p {
-            font-weight: 300; /* Texto com peso mais leve */
+            font-weight: 600; /* Texto com peso mais forte */
             text-align: justify;
             margin-top: 20px;
             font-size: 1.25em; /* Tamanho proporcional para o parágrafo */
+        }
+
+        /* Estilo da pergunta */
+        .question {
+            display: flex;
+            justify-content: center; /* Centraliza no eixo X */
+            font-size: 1.2em; /* Diminuindo o tamanho da fonte */
+            margin-top: 40px;
+            font-family: 'Montserrat', sans-serif; /* Garantindo que a fonte Montserrat seja aplicada */
+        }
+
+        /* Estilo dos botões */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #ffffff; /* Cor do fundo do botão */
+            color: #6a0dad; /* Cor do texto do botão */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Montserrat', sans-serif; /* Garantindo que a fonte Montserrat seja aplicada */
+        }
+
+        .button:hover {
+            background-color: #6a0dad; /* Cor de fundo roxa ao passar o mouse */
+            color: #ffffff; /* Texto branco ao passar o mouse */
         }
     </style>
 </head>
@@ -46,6 +82,29 @@
     </header>
     <main>
         <p>Jesus é o Filho de Deus e o Salvador do mundo. Ele é Deus que se fez homem para nos resgatar, vivendo entre nós, ensinando sobre o amor e a verdade. Jesus é o único caminho que nos leva a Deus, pois veio para reconciliar a humanidade com o Pai. Jesus é aquele que morreu na cruz, derramando seu sangue para perdoar nossos pecados. Mas ele não ficou na sepultura. Ao terceiro dia, ressuscitou, vencendo a morte e garantindo a vida eterna para todos que nele creem. Jesus é o Rei que voltará para reinar sobre toda a criação, trazendo justiça e paz. Ele é o Bom Pastor que cuida de cada um de nós, nos chamando para segui-lo e confiar nele. Jesus é aquele que nos ama com um amor incondicional e nos convida a ter uma vida nova ao seu lado.</p>
+
+        <!-- Pergunta e Botões -->
+        <div class="question">
+            <p>Como você está?</p>
+        </div>
+        
+        <div class="buttons">
+            <button class="button" onclick="redirectUser('triste')">Triste</button>
+            <button class="button" onclick="redirectUser('alegre')">Alegre</button>
+        </div>
     </main>
+
+    <script>
+        // Função de redirecionamento com base na escolha do usuário
+        function redirectUser(mood) {
+            if (mood === 'triste') {
+                // Se o usuário escolher "Triste", redireciona para a página de tristeza
+                window.location.href = 'triste.html'; // Substitua com a URL desejada
+            } else if (mood === 'alegre') {
+                // Se o usuário escolher "Alegre", redireciona para a página de alegria
+                window.location.href = 'alegre.html'; // Substitua com a URL desejada
+            }
+        }
+    </script>
 </body>
 </html>
