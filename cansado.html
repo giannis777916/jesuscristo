@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cansado</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Garantindo que a fonte Montserrat seja aplicada em tudo */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para todo o site */
+            background-color: #6a0dad; /* Fundo roxo */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: center; /* Centralizando todo o conteúdo no eixo X */
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 3em;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        p {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 1.25em;
+        }
+
+        /* Estilo do versículo */
+        .verse {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 40px;
+        }
+
+        /* Estilo da recomendação da música */
+        .music-recommendation {
+            margin-top: 40px;
+        }
+
+        .music-title {
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .music-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Botão para voltar */
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            background-color: #ffffff;
+            color: #6a0dad;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Montserrat', sans-serif; /* Garantindo que a fonte Montserrat seja aplicada */
+        }
+
+        .back-button:hover {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+
+        /* Ajustes para dispositivos menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .verse {
+                font-size: 1.3em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .music-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .back-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .verse {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .music-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .back-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cansado</h1>
+    </header>
+    <main>
+        <!-- Versículo para os cansados e oprimidos -->
+        <div class="verse">
+            <p>"Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei." - Mateus 11:28</p>
+        </div>
+
+        <!-- Recomendação de música -->
+        <div class="music-recommendation">
+            <p class="music-title">Recomendação de Música</p>
+            <p>Ouça essa música e encontre descanso para a sua alma:</p>
+            <!-- Imagem da capa da música -->
+            <img src="https://i.ytimg.com/vi/7M0MaNupzqE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDo7fShecLvI4TD5BUFTOBXRbSgXg" alt="Capa da música Descanso - Eli Soares" class="music-image">
+            <p><a href="https://open.spotify.com/intl-pt/track/4ZEirVs6IoyyijSGrPJAmh?si=6cc66a03d45e4ef6" target="_blank" style="color: white; font-size: 1.2em;">Ouça "Descanso" no Spotify</a></p>
+        </div>
+
+        <!-- Botão para voltar -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </main>
+</body>
+</html>
