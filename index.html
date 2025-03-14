@@ -16,10 +16,10 @@
             padding: 0;
             line-height: 1.6;
             font-size: 16px; /* Tamanho base da fonte */
+            text-align: center; /* Centraliza todo o conteúdo no eixo X */
         }
 
         header {
-            text-align: center;
             margin-top: 50px;
         }
 
@@ -73,6 +73,45 @@
         .button:hover {
             background-color: #6a0dad; /* Cor de fundo roxa ao passar o mouse */
             color: #ffffff; /* Texto branco ao passar o mouse */
+        }
+
+        /* Ajustes para dispositivos menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .question {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .button {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .question {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .button {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
