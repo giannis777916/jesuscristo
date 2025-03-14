@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alegria para Você</title>
+    <!-- Importando a fonte Montserrat do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos diretamente no HTML */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Fonte Montserrat para todo o site */
+            background-color: #6a0dad; /* Fundo roxo */
+            color: #ffffff; /* Texto branco */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px; /* Tamanho base da fonte */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-weight: 700; /* Título com peso mais forte */
+            font-size: 3em; /* Tamanho proporcional para o título */
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto; /* Centraliza o conteúdo */
+            max-width: 960px; /* Limita a largura máxima para o conteúdo */
+            text-align: center;
+        }
+
+        p {
+            font-weight: 600; /* Texto com peso mais forte */
+            margin-top: 20px;
+            font-size: 1.25em; /* Tamanho proporcional para o parágrafo */
+            text-align: center;
+        }
+
+        /* Estilo do versículo */
+        .verse {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        /* Estilo da recomendação da música */
+        .music-recommendation {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .music-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .music-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Botão para voltar */
+        .back-button {
+            display: block;
+            margin: 30px auto;
+            background-color: #ffffff;
+            color: #6a0dad;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Montserrat', sans-serif; /* Garantindo que a fonte Montserrat seja aplicada */
+        }
+
+        .back-button:hover {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+
+        /* Ajustes para dispositivos menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Ajusta o tamanho do título */
+            }
+
+            .verse {
+                font-size: 1.3em; /* Ajusta o tamanho do versículo */
+            }
+
+            .music-title {
+                font-size: 1.2em; /* Ajusta o tamanho da recomendação da música */
+            }
+
+            .music-image {
+                width: 150px; /* Ajusta o tamanho da imagem */
+                height: 150px;
+            }
+
+            .back-button {
+                font-size: 1em; /* Ajusta o tamanho da fonte do botão */
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Ajusta ainda mais o tamanho do título */
+            }
+
+            .verse {
+                font-size: 1.2em; /* Ajusta o tamanho do versículo */
+            }
+
+            .music-title {
+                font-size: 1.1em; /* Ajusta o tamanho da recomendação da música */
+            }
+
+            .music-image {
+                width: 130px; /* Ajusta o tamanho da imagem */
+                height: 130px;
+            }
+
+            .back-button {
+                font-size: 0.9em; /* Ajusta o tamanho da fonte do botão */
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alegria para o Seu Coração</h1>
+    </header>
+    <main>
+        <!-- Versículo de alegria -->
+        <div class="verse">
+            <p>"Não vos entristeçais, porque a alegria do Senhor é a nossa força." - Neemias 8:10</p>
+        </div>
+
+        <!-- Recomendação de música -->
+        <div class="music-recommendation">
+            <p class="music-title">A Alegria do Senhor</p>
+            <p>Ouça essa música e deixe seu coração se alegrar:</p>
+            <!-- Imagem da capa da música -->
+            <img src="https://i.scdn.co/image/ab67616d0000b273804d0966b1687f6dfb2bbfd8" alt="Capa da música" class="music-image">
+            <p><a href="https://open.spotify.com/intl-pt/track/3rmVmPqjp3Fubkulpd6aQi?si=8ddf9861a0354863" target="_blank" style="color: white; font-size: 1.2em;">Ouça "Alegria do Senhor" no Spotify</a></p>
+        </div>
+
+        <!-- Botão para voltar -->
+        <button class="back-button" onclick="window.history.back()">Voltar</button>
+    </main>
+</body>
+</html>
